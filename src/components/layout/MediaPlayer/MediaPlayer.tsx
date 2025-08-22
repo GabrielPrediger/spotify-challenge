@@ -14,19 +14,24 @@ export function MediaPlayer() {
       variants={footerVariants}
       initial="hidden"
       animate="visible"
-      className="pointer-events-none absolute bottom-0 flex w-full items-center justify-between gap-4 bg-transparent pr-5"
+      className="pointer-events-none absolute bottom-0 flex w-full items-center gap-4 bg-transparent pr-5"
     >
-      <div className="pointer-events-auto hidden sm:block">
-        <AnimatePresence>
-          {isPlaying && <TrackInfo isPlaying={isPlaying} />}
-        </AnimatePresence>
+      <div className="flex w-1/4 justify-start">
+        <div className="pointer-events-auto hidden sm:block">
+          <AnimatePresence>
+            {isPlaying && <TrackInfo isPlaying={isPlaying} />}
+          </AnimatePresence>
+        </div>
       </div>
 
-      <div className="pointer-events-auto hidden sm:block">
-        <PlayerControls
-          isPlaying={isPlaying}
-          onPlayPause={() => setIsPlaying(!isPlaying)}
-        />
+      <div className="flex w-2/4 justify-center">
+        {/* Player de Desktop */}
+        <div className="pointer-events-auto hidden sm:block">
+          <PlayerControls
+            isPlaying={isPlaying}
+            onPlayPause={() => setIsPlaying(!isPlaying)}
+          />
+        </div>
       </div>
 
       <PlayerControlsMobile
@@ -34,8 +39,10 @@ export function MediaPlayer() {
         onPlayPause={() => setIsPlaying(!isPlaying)}
       />
 
-      <div className="pointer-events-auto hidden items-center gap-4 sm:block">
-        <DeviceControls />
+      <div className="mr-4 flex w-1/4 justify-end">
+        <div className="pointer-events-auto hidden items-center gap-4 sm:flex">
+          <DeviceControls />
+        </div>
       </div>
     </motion.footer>
   );

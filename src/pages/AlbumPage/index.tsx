@@ -35,7 +35,7 @@ export function AlbumPage() {
       </div>
 
       <motion.header
-        className="relative flex justify-center overflow-hidden rounded-xl sm:justify-start"
+        className="relative flex justify-center overflow-hidden rounded-xl py-10 sm:justify-start"
         initial="initial"
         animate="visible"
         whileHover="hover"

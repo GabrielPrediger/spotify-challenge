@@ -16,7 +16,7 @@ export const ArtistHeader = ({ artist }: ArtistHeaderProps) => {
   const { t } = useTranslation();
   return (
     <motion.header
-      className="relative flex h-[28rem] justify-center overflow-hidden rounded-b-none sm:h-96 sm:justify-start sm:rounded-4xl"
+      className="relative flex h-[28rem] justify-center overflow-hidden rounded-b-none sm:h-96 sm:justify-start sm:rounded-4xl sm:rounded-b-none"
       initial="initial"
       animate="visible"
       whileHover="hover"
@@ -65,7 +65,7 @@ export const ArtistHeader = ({ artist }: ArtistHeaderProps) => {
             })}
           </p>
         </div>
-        <div className="absolute top-4 right-[-5rem] sm:relative sm:right-0">
+        <div className="absolute top-4 right-[-20%] sm:relative sm:right-0">
           <PopularityMeter popularity={artist.popularity} />
         </div>
       </div>
