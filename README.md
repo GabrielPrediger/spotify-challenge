@@ -105,3 +105,36 @@ Pronto! A aplicação deve estar rodando localmente.
 - `npm run build`: Compila a aplicação para produção.
 - `npm run lint`: Executa o linter (ESLint) para verificar a qualidade do código.
 - `npm run preview`: Inicia um servidor local para visualizar a build de produção.
+
+
+
+## Algumas imagens do app
+
+**Desktop**
+
+<img width="1903" height="916" alt="image" src="https://github.com/user-attachments/assets/a3a2230c-5c4c-4176-8033-133a1970ab21" />
+<img width="1904" height="913" alt="image" src="https://github.com/user-attachments/assets/5cdda973-8597-477c-9852-75233b3349b8" />
+<img width="1905" height="909" alt="image" src="https://github.com/user-attachments/assets/e065fd47-eea7-4fe6-a079-39c8e5fad2e1" />
+<img width="1904" height="915" alt="image" src="https://github.com/user-attachments/assets/6262c0c5-1e84-4411-8629-6e10e55f1a55" />
+<img width="1901" height="912" alt="image" src="https://github.com/user-attachments/assets/afdb0d00-3e1a-40d8-bc85-ab26dae13f5d" />
+
+
+**Mobile**
+
+<img width="413" height="846" alt="image" src="https://github.com/user-attachments/assets/d9adbfe4-4a72-4819-8dcf-67cc3526fe24" />
+</br>
+<img width="405" height="839" alt="image" src="https://github.com/user-attachments/assets/2020fa21-f4d9-48ad-98fd-a759f8adb53e" />
+</br>
+<img width="399" height="837" alt="image" src="https://github.com/user-attachments/assets/1609b0d1-0f96-41c0-a8d5-3a2ba1bfdde9" />
+</br>
+<img width="399" height="834" alt="image" src="https://github.com/user-attachments/assets/342b5a98-1a7d-47fa-9049-5cb4d0cc1966" />
+</br>
+<img width="408" height="843" alt="image" src="https://github.com/user-attachments/assets/b0ea3652-22eb-4d89-8253-47b2011a9349" />
+
+
+
+
+
+
+
+
