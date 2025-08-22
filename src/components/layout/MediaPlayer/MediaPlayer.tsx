@@ -16,15 +16,15 @@ export function MediaPlayer() {
       animate="visible"
       className="pointer-events-none absolute bottom-0 flex w-full items-center gap-4 bg-transparent pr-5"
     >
-      <div className="flex w-1/4 justify-start">
-        <div className="pointer-events-auto hidden sm:block">
+      <div className="hidden w-1/4 justify-start sm:flex">
+        <div className="pointer-events-auto">
           <AnimatePresence>
             {isPlaying && <TrackInfo isPlaying={isPlaying} />}
           </AnimatePresence>
         </div>
       </div>
 
-      <div className="flex w-2/4 justify-center">
+      <div className="hidden w-2/4 justify-center sm:flex">
         {/* Player de Desktop */}
         <div className="pointer-events-auto hidden sm:block">
           <PlayerControls
@@ -39,7 +39,7 @@ export function MediaPlayer() {
         onPlayPause={() => setIsPlaying(!isPlaying)}
       />
 
-      <div className="mr-4 flex w-1/4 justify-end">
+      <div className="mr-4 hidden w-1/4 justify-end sm:flex">
         <div className="pointer-events-auto hidden items-center gap-4 sm:flex">
           <DeviceControls />
         </div>
